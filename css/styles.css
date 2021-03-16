@@ -10,8 +10,17 @@ body {
 .white-background {
     background-color: #fff;
     margin:30px;
-    padding: 20px;
+    padding: 0px 20px 10px 20px;
     border-radius: 50px;
+}
+
+.logo {
+    max-width: 150px;
+    display:inline;
+    position: relative;
+    top: -20px;
+    left: 45%;
+    right:50%;
 }
 
 /*navigation header*/
@@ -24,6 +33,7 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     color: #1B203D;
+    font-size:1rem;
 }
 
 .current {
@@ -37,6 +47,7 @@ h1 {
     color: #8A253E;
     letter-spacing: .3rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 .cta {
@@ -46,8 +57,40 @@ h1 {
     font-size: 1.5rem;
 }
 
+.button-explore {
+    max-width: 2rem;
+    max-height: 2rem;
+    background-color: #E8DDBA;
+}
+
+.button-create {
+    max-width: 2rem;
+    max-height: 2rem;
+    background-color: #E8DDBA;
+}
+
 main img {
-    max-width: 400px;
+    max-width: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.explore {
+    margin:2rem;
+    order: 1;
+}
+
+.create {
+    margin:2rem;
+    order: 3;
+}
+
+.image-homepage {
+    margin:2rem;
+    order: 2;
 }
 
 /*footer*/
