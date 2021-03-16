@@ -5,8 +5,15 @@
 
 
 h1 {
-    font-family: "Closeness Outline";
+    font-family: "Closeness Outline", Verdana, Geneva, Tahoma, sans-serif;
     color: #8A253E;
     letter-spacing: .3rem;
     font-size: 3rem;
+}
+
+.cta {
+    text-decoration: none;
+    color: #3A6186;
+    font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
 }
