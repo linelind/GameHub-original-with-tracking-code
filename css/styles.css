@@ -3,6 +3,34 @@
     src: url("../Fonts/closeness.outline-regular.ttf") format("truetype");
 }
 
+body {
+    background: linear-gradient(#3A6186, #8A253E);
+}
+
+.white-background {
+    background-color: #fff;
+    margin:30px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+/*navigation header*/
+
+nav li{
+    display: inline;
+}
+
+nav a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #1B203D;
+}
+
+.current {
+    text-decoration: underline 0.2rem;
+}
+
+/*main content*/
 
 h1 {
     font-family: "Closeness Outline", Verdana, Geneva, Tahoma, sans-serif;
@@ -16,4 +44,14 @@ h1 {
     color: #3A6186;
     font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem;
+}
+
+main img {
+    max-width: 400px;
+}
+
+/*footer*/
+
+footer {
+    text-align: center;
 }
