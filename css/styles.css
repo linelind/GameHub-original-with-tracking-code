@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Closeness Outline";
+    src: url("../Fonts/closeness.outline-regular.ttf") format("truetype");
+}
+
+
+h1 {
+    font-family: "Closeness Outline";
+    color: #8A253E;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
