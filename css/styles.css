@@ -1,16 +1,21 @@
 @font-face {
     font-family: "Closeness Outline";
     src: url("../Fonts/closeness.outline-regular.ttf") format("truetype");
+    font-family: "Montserrat Regular";
+    src: url("../Fonts/Montserrat-Regular.ttf") format("truetype");
+    font-family: ("Montserrat SemiBold");
+    src: url("../Fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 body {
     background: linear-gradient(#3A6186, #8A253E);
+    font-family: "Montserrat Regular";
 }
 
 .white-background {
     background-color: #fff;
     margin:30px;
-    padding: 0px 20px 10px 20px;
+    padding: 30px 20px 20px 20px;
     border-radius: 50px;
 }
 
@@ -18,26 +23,46 @@ body {
     max-width: 150px;
     display:inline;
     position: relative;
-    top: -20px;
+    top: -70px;
     left: 45%;
     right:50%;
 }
+
 
 /*navigation header*/
 
 nav li{
     display: inline;
-}
+    position: relative;
+    }
 
 nav a {
     padding: 1rem;
     text-decoration: none;
     color: #1B203D;
-    font-size:1rem;
+    font-size:0.875rem;
 }
 
 .current {
     text-decoration: underline 0.2rem;
+}
+
+ul {
+    display:inline;
+
+}
+
+/*Menu-slider*/
+
+.menu-slider {
+    rotate: 90deg;
+    float: left;
+    color: #3A6186;
+    padding: 5px 10px;
+    background-color: #FFF;
+    position: absolute;
+    left: -20px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 /*main content*/
@@ -53,20 +78,23 @@ h1 {
 .cta {
     text-decoration: none;
     color: #3A6186;
-    font-family: "montserrat", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .button-explore {
-    max-width: 2rem;
-    max-height: 2rem;
+    display: block;
+    padding: 30px 50px;
+    border: #E8DDBA solid 0.3rem;
     background-color: #E8DDBA;
+    border-radius: 30px;
 }
 
 .button-create {
-    max-width: 2rem;
-    max-height: 2rem;
-    background-color: #E8DDBA;
+    display: block;
+    padding: 30px 50px;
+    border: #E8DDBA solid 0.3rem;
+    border-radius: 30px;
+    background-color: £fff;
 }
 
 main img {
@@ -78,14 +106,18 @@ main img {
     justify-content: space-around;
 }
 
-.explore {
+.explore-div {
     margin:2rem;
     order: 1;
+    position: relative;
+    align-self: flex-end;
 }
 
-.create {
+.create-div {
     margin:2rem;
     order: 3;
+    position: relative;
+    align-self: flex-end;
 }
 
 .image-homepage {
@@ -93,8 +125,23 @@ main img {
     order: 2;
 }
 
+.imgdesign-home {
+    border-radius: 50%;
+}
+
+
 /*footer*/
 
 footer {
     text-align: center;
+    font-size: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 600px){
+    .container {
+        flex-direction: row;
+    }
 }
