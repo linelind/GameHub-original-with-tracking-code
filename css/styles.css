@@ -56,8 +56,6 @@ body {
   font-size: 0.75rem;
 }
 
-/*navigation header*/
-
 .logo {
   max-width: 150px;
   display: block;
@@ -124,39 +122,24 @@ nav a {
   box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
 }
 
-/*Menu-slider*/
-
-.menu-slider {
+.menu {
   rotate: 90deg;
   float: left;
   color: #3a6186;
   padding: 5px 10px;
   background-color: #fff;
   position: absolute;
-  left: -15px;
+  left: -16px;
   top: 200px;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   font-size: 0.75rem;
 }
 
-#menu {
+/*Waiting for Javascript with this one, and so hiding for now.*/
+#menu,
+.menu-slider {
   display: none;
-}
-
-.menu-slider-text {
-  display: none;
-  position: fixed;
-  background: #fff;
-  text-align: left;
-  margin: 0;
-}
-
-/*#menu:checked ~ .menu-slider-text {
-  display: block;
-}
-
-/*#menu:checked ~ .menu-slider {
 }
 
 /*Home page*/
@@ -237,7 +220,7 @@ footer {
   color: grey;
 }
 
-/*responsable sizes*/
+/*responsive sizes*/
 
 /*mobil*/
 @media (max-width: 599px) {
@@ -283,7 +266,7 @@ footer {
     z-index: 1;
   }
 
-  .menu-slider {
+  .menu {
     display: none;
   }
 
@@ -390,7 +373,7 @@ footer {
     z-index: 2;
   }
 
-  .menu-slider {
+  .menu {
     display: none;
   }
 
