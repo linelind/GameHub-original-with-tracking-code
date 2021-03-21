@@ -62,24 +62,12 @@ body {
   display: flex;
   margin: -50px auto 20px auto;
   z-index: 100;
+  position: relative;
 }
 
-.navigation {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  align-items: center;
-  margin-top: -80px;
-}
-
-.navigation-links {
-  display: flex;
-  display: inline;
-}
-
-nav li {
-  display: inline;
+nav {
+  margin-top: 30px;
+  margin-left: 5px;
 }
 
 nav a {
@@ -97,6 +85,24 @@ nav a {
 
 .current {
   text-decoration: underline 0.2rem;
+}
+
+.hamburger-label {
+  float: left;
+  color: #1b203d;
+  padding: 10px;
+  margin-top: -50px;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 150;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: inline-block;
+  float: left;
+  position: fixed;
+  margin-top: 50px;
+  z-index: 1;
 }
 
 .navigation__icon {
@@ -122,6 +128,11 @@ nav a {
   box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
 }
 
+.ipad-signin__button {
+  text-decoration: none;
+  color: #1b203d;
+}
+
 .menu {
   rotate: 90deg;
   float: left;
@@ -142,14 +153,13 @@ nav a {
   display: none;
 }
 
-/*Home page*/
-
 h1 {
   font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
   color: #8a253e;
   letter-spacing: 0.3rem;
   font-size: 2.3125rem;
   text-align: center;
+  padding: 20px 10px;
 }
 
 .cta {
@@ -160,21 +170,17 @@ h1 {
 
 .button-explore {
   display: block;
-  padding: 30px 35px;
   border: #e8ddba solid 0.3rem;
   background-color: #e8ddba;
   border-radius: 30px;
   text-align: center;
-  min-width: 139.334px;
 }
 
 .button-create {
   display: block;
-  padding: 30px 35px;
   border: #e8ddba solid 0.3rem;
   border-radius: 30px;
   background-color: #fff;
-  min-width: 139.334px;
   text-align: center;
 }
 
@@ -187,31 +193,6 @@ main img {
   justify-content: space-around;
 }
 
-.explore-div {
-  margin: 2rem;
-  order: 1;
-  position: relative;
-  align-self: flex-end;
-}
-
-.create-div {
-  margin: 2rem;
-  order: 3;
-  position: relative;
-  align-self: flex-end;
-}
-
-.image-homepage {
-  margin: 2rem;
-  order: 2;
-}
-
-.imgdesign-home {
-  border-radius: 50%;
-}
-
-/*footer*/
-
 footer {
   text-align: center;
   font-size: 0.6rem;
@@ -220,21 +201,26 @@ footer {
   color: grey;
 }
 
-/*responsive sizes*/
-
+/*Home page, 3 responsive sizes:*/
+/*------------------------------*/
 /*mobil*/
-@media (max-width: 599px) {
+@media only screen and (max-width: 599px) {
+  nav,
+  #hamburger-menu,
+  .menu,
+  .navigation__icon,
+  .image-homepage,
+  .signin_button,
+  .ipad-signin__image {
+    display: none;
+  }
+
   .white-background {
     margin: 30px 10px;
   }
 
   .logo {
     max-width: 90px;
-  }
-
-  h1 {
-    font-size: 1.3125rem;
-    padding: 20px 10px;
   }
 
   .search {
@@ -245,43 +231,6 @@ footer {
     width: 70%;
   }
 
-  nav,
-  #hamburger-menu {
-    display: none;
-  }
-
-  .hamburger-label {
-    float: left;
-    color: #1b203d;
-    padding: 10px;
-    margin-top: -50px;
-    font-size: 1.5rem;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: inline-block;
-    float: left;
-    position: fixed;
-    margin-top: 50px;
-    z-index: 1;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .navigation__icon {
-    display: none;
-  }
-
-  .image-homepage {
-    display: none;
-  }
-
-  .signin_button {
-    display: none;
-  }
-
   nav li {
     display: block;
     margin: 20px 20px;
@@ -290,51 +239,53 @@ footer {
   .nav_textlinks {
     border: 2px solid #8a253e;
     padding: 5px;
-    background-color: #fff;
+    background-color: #f2ecd9;
+    box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
+    margin-top: -80px;
+  }
+
+  h1 {
+    font-size: 1.3125rem;
   }
 
   .container {
-    display: flex;
     flex-direction: column;
+    gap: 20px;
+    position: relative;
     align-items: center;
   }
 
   .explore-div {
     order: 2;
-    align-self: center;
   }
 
   .create-div {
     order: 3;
-    align-self: center;
-    margin-top: -2px;
   }
 
   .button-explore {
-    padding: 20px 20px;
+    padding: 20px 30px;
     border-radius: 15px;
     font-size: 0.75rem;
     border: #e8ddba solid 0.2rem;
+    max-width: 400px;
+    min-width: 118.067px;
   }
 
   .button-create {
-    padding: 20px 20px;
+    padding: 20px 30px;
     border-radius: 15px;
     font-size: 0.75rem;
     border: #e8ddba solid 0.2rem;
+    max-width: 400px;
+    min-width: 118.067px;
   }
 
   .ipad-signin {
     margin: 20px auto;
   }
 
-  .ipad-signin__image {
-    display: none;
-  }
-
   .ipad-signin__button {
-    text-decoration: none;
-    color: #1b203d;
     font-size: 0.75rem;
     padding: 20px 30px;
     border: 2px solid #c7732e;
@@ -342,28 +293,24 @@ footer {
     background-color: rgb(255, 255, 255);
     letter-spacing: 0.1rem;
     order: 1;
+    min-width: 118.067px;
   }
 }
 
+/*------------------------------*/
 /*tablet*/
-@media (min-width: 600px) and (max-width: 1199px) {
-  h1 {
-    padding: 20px 10px;
-  }
-
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .menu,
+  .navigation__icon,
+  .image-homepage,
+  .signin_button,
   nav,
   #hamburger-menu {
     display: none;
-    margin-top: 30px;
-    margin-left: 5px;
   }
 
   .hamburger-label {
-    float: left;
-    color: #1b203d;
-    padding: 10px;
     margin: -70px auto auto 20px;
-    font-size: 1.5rem;
   }
 
   #hamburger-menu:checked ~ nav {
@@ -373,22 +320,6 @@ footer {
     z-index: 2;
   }
 
-  .menu {
-    display: none;
-  }
-
-  .navigation__icon {
-    display: none;
-  }
-
-  .image-homepage {
-    display: none;
-  }
-
-  .signin_button {
-    display: none;
-  }
-
   nav li {
     display: block;
     margin: 20px 20px;
@@ -397,13 +328,16 @@ footer {
   .nav_textlinks {
     border: 2px solid #8a253e;
     padding: 5px;
-    background-color: #fff;
+    background-color: #f2ecd9;
+    box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
+    margin-top: -90px;
   }
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
   }
 
   .explore-div {
@@ -417,16 +351,14 @@ footer {
     margin-top: -2px;
   }
 
-  .imgdesign-home {
-    border-radius: 0;
-  }
-
   .button-explore {
-    padding: 40px 100px;
+    padding: 40px 80px;
+    min-width: 139.333px;
   }
 
   .button-create {
-    padding: 40px 100px;
+    padding: 40px 80px;
+    min-width: 139.333px;
   }
 
   .ipad-signin {
@@ -443,8 +375,6 @@ footer {
   .ipad-signin__button {
     z-index: 2;
     place-self: center;
-    text-decoration: none;
-    color: #1b203d;
     font-size: 1.3125rem;
     padding: 20px 50px;
     background-color: rgb(255, 255, 255, 0.8);
@@ -453,11 +383,73 @@ footer {
   }
 }
 
+/*------------------------------*/
 /*laptop**/
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .ipad-signin,
   #hamburger-menu,
   .hamburger-label {
     display: none;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: -80px;
+  }
+
+  .navigation-links {
+    display: flex;
+    display: inline;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  .nav_textlinks {
+    margin-top: 0;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  .button-explore {
+    padding: 30px 35px;
+    border-radius: 30px;
+    min-width: 139.334px;
+  }
+
+  .button-create {
+    padding: 30px 35px;
+    border-radius: 30px;
+    min-width: 139.334px;
+  }
+
+  .explore-div {
+    margin: 2rem;
+    order: 1;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .create-div {
+    margin: 2rem;
+    order: 3;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .image-homepage {
+    margin: 2rem;
+    order: 2;
+  }
+
+  .imgdesign-home {
+    border-radius: 50%;
   }
 }
