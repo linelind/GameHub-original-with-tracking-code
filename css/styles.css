@@ -47,7 +47,7 @@ body {
 
 .search-input input {
   height: 100%;
-  width: 100%;
+  width: 80%;
   border: none;
   outline: none;
   background: transparent;
@@ -233,6 +233,10 @@ footer {
 
 /*mobil*/
 @media (max-width: 599px) {
+  .logo {
+    max-width: 90px;
+  }
+
   h1 {
     padding: 20px 10px;
     font-size: 1.3125rem;
@@ -248,7 +252,7 @@ footer {
     float: left;
     color: #1b203d;
     padding: 10px;
-    margin: -80px auto auto 0;
+    margin: -50px auto auto 0;
     font-size: 1.5rem;
   }
 
@@ -284,6 +288,14 @@ footer {
     border: 2px solid #8a253e;
     padding: 5px;
     background-color: #fff;
+  }
+
+  .search {
+    max-width: 200px;
+  }
+
+  .search-input input {
+    width: 70%;
   }
 
   .container {
