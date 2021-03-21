@@ -10,6 +10,10 @@
 body {
   background: linear-gradient(#3a6186, #8a253e);
   font-family: 'Montserrat Regular';
+  height: 100%;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .white-background {
