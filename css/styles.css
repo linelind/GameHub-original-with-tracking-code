@@ -52,6 +52,7 @@ body {
   outline: none;
   background: transparent;
   padding: 0 40px;
+  font-size: 0.75rem;
 }
 
 /*navigation header*/
@@ -85,13 +86,17 @@ nav a {
   padding: 1rem;
   text-decoration: none;
   color: #1b203d;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .nav_textlinks {
   flex: 1;
   float: left;
   padding: 0 10px;
+}
+
+.current {
+  text-decoration: underline 0.2rem;
 }
 
 .navigation__icon {
@@ -102,8 +107,13 @@ nav a {
   cursor: pointer;
 }
 
-.current {
-  text-decoration: underline 0.2rem;
+.signin_button {
+  float: right;
+  border: 2px solid #c7732e;
+  color: #1b203d;
+  font-size: 0.75rem;
+  padding: 8px 25px;
+  margin: 10px 20px 0 0;
 }
 
 /*Menu-slider*/
@@ -115,10 +125,11 @@ nav a {
   padding: 5px 10px;
   background-color: #fff;
   position: absolute;
-  left: -20px;
+  left: -15px;
   top: 200px;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
+  font-size: 0.75rem;
 }
 
 #menu {
@@ -140,39 +151,39 @@ nav a {
 /*#menu:checked ~ .menu-slider {
 }
 
-/*main content*/
+/*Home page*/
 
 h1 {
   font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
   color: #8a253e;
   letter-spacing: 0.3rem;
-  font-size: 3rem;
+  font-size: 2.3125rem;
   text-align: center;
 }
 
 .cta {
   text-decoration: none;
   color: #3a6186;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .button-explore {
   display: block;
-  padding: 30px 40px;
+  padding: 30px 35px;
   border: #e8ddba solid 0.3rem;
   background-color: #e8ddba;
   border-radius: 30px;
-  min-width: 167.2px;
   text-align: center;
+  min-width: 139.334px;
 }
 
 .button-create {
   display: block;
-  padding: 30px 40px;
+  padding: 30px 35px;
   border: #e8ddba solid 0.3rem;
   border-radius: 30px;
-  background-color: £fff;
-  min-width: 167.2px;
+  background-color: #fff;
+  min-width: 139.334px;
   text-align: center;
 }
 
@@ -220,8 +231,227 @@ footer {
 
 /*responsable sizes*/
 
-@media only screen and (min-width: 600px) {
+/*mobil*/
+@media (max-width: 599px) {
+  h1 {
+    padding: 20px 10px;
+    font-size: 1.3125rem;
+  }
+
+  nav,
+  #hamburger-menu {
+    display: none;
+    margin-top: 30px;
+  }
+
+  .hamburger-label {
+    float: left;
+    color: #1b203d;
+    padding: 10px;
+    margin: -80px auto auto 0;
+    font-size: 1.5rem;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+    float: left;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .menu-slider {
+    display: none;
+  }
+
+  .navigation__icon {
+    display: none;
+  }
+
+  .image-homepage {
+    display: none;
+  }
+
+  .signin_button {
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    margin: 20px 20px;
+  }
+
+  .nav_textlinks {
+    border: 2px solid #8a253e;
+    padding: 5px;
+    background-color: #fff;
+  }
+
   .container {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-div {
+    order: 2;
+    align-self: center;
+  }
+
+  .create-div {
+    order: 3;
+    align-self: center;
+    margin-top: -2px;
+  }
+
+  .imgdesign-home {
+    border-radius: 0;
+  }
+
+  .button-explore {
+    padding: 40px 100px;
+  }
+
+  .button-create {
+    padding: 40px 100px;
+  }
+
+  .ipad-signin {
+    order: 1;
+    display: grid;
+  }
+
+  .ipad-signin__image {
+    padding: 0 100px;
+    background-color: #d6dce2;
+    z-index: 1;
+  }
+
+  .ipad-signin__button {
+    z-index: 2;
+    place-self: center;
+    text-decoration: none;
+    color: #1b203d;
+    font-size: 1.3125rem;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-top: -280px;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/*tablet* - hamburger menu and stacking buttons and image.*/
+@media (min-width: 600px) and (max-width: 1199px) {
+  h1 {
+    padding: 20px 10px;
+  }
+
+  nav,
+  #hamburger-menu {
+    display: none;
+    margin-top: 30px;
+    margin-left: 5px;
+  }
+
+  .hamburger-label {
+    float: left;
+    color: #1b203d;
+    padding: 10px;
+    margin: -70px auto auto 20px;
+    font-size: 1.5rem;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+    float: left;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .menu-slider {
+    display: none;
+  }
+
+  .navigation__icon {
+    display: none;
+  }
+
+  .image-homepage {
+    display: none;
+  }
+
+  .signin_button {
+    display: none;
+  }
+
+  nav li {
+    display: block;
+    margin: 20px 20px;
+  }
+
+  .nav_textlinks {
+    border: 2px solid #8a253e;
+    padding: 5px;
+    background-color: #fff;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore-div {
+    order: 2;
+    align-self: center;
+  }
+
+  .create-div {
+    order: 3;
+    align-self: center;
+    margin-top: -2px;
+  }
+
+  .imgdesign-home {
+    border-radius: 0;
+  }
+
+  .button-explore {
+    padding: 40px 100px;
+  }
+
+  .button-create {
+    padding: 40px 100px;
+  }
+
+  .ipad-signin {
+    order: 1;
+    display: grid;
+  }
+
+  .ipad-signin__image {
+    padding: 0 100px;
+    background-color: #d6dce2;
+    z-index: 1;
+  }
+
+  .ipad-signin__button {
+    z-index: 2;
+    place-self: center;
+    text-decoration: none;
+    color: #1b203d;
+    font-size: 1.3125rem;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-top: -280px;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/*laptop* - as is?*/
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .ipad-signin,
+  #hamburger-menu,
+  .hamburger-label {
+    display: none;
   }
 }
