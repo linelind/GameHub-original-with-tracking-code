@@ -1,8 +1,14 @@
 @font-face {
   font-family: 'Closeness Outline';
   src: url('../Fonts/closeness.outline-regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Montserrat Regular';
   src: url('../Fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: ('Montserrat SemiBold');
   src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
@@ -68,6 +74,7 @@ body {
 nav {
   margin-top: 30px;
   margin-left: 5px;
+  font-family: 'Montserrat SemiBold';
 }
 
 nav a {
@@ -145,10 +152,11 @@ nav a {
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   font-size: 0.75rem;
+  font-family: 'Montserrat SemiBold';
 }
 
 /*Waiting for Javascript with this one, and so hiding for now.*/
-#menu,
+#menu-label,
 .menu-slider {
   display: none;
 }
@@ -166,6 +174,7 @@ h1 {
   text-decoration: none;
   color: #3a6186;
   font-size: 1rem;
+  font-family: 'Montserrat SemiBold';
 }
 
 .button-explore {

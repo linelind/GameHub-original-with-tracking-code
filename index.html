@@ -12,7 +12,7 @@
     <div class="white-background">
       <header>
         <a href="index.html"><img src="images/gamehub_logo.png" alt="Logo of GameHub.com" class="logo" /></a>
-        <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-hamburger"></i></label>
+        <label class="hamburger-label" for="hamburger-menu"><i alt="Dropdown menu." class="fas fa-hamburger"></i></label>
         <input type="checkbox" id="hamburger-menu" />
         <nav>
           <div class="navigation">
@@ -24,9 +24,15 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
             <ul class="navigation-links">
-              <li a href="checkout.html"><img src="icons/cart-empty.png" class="navigation__icon cart-icon" /></li>
-              <li a href="userpage.html"><img src="icons/favourite-empty.png" class="navigation__icon" /></li>
-              <li a href="userpage.html"><img src="icons/user.png" class="navigation__icon" /></li>
+              <li>
+                <a href="checkout.html"><img src="icons/cart-empty.png" alt="My cart." class="navigation__icon cart-icon" /></a>
+              </li>
+              <li>
+                <a href="userpage.html"><img src="icons/favourite-empty.png" alt="My favourites." class="navigation__icon" /></a>
+              </li>
+              <li>
+                <a href="userpage.html"><img src="icons/user.png" alt="My user page." class="navigation__icon" /></a>
+              </li>
             </ul>
           </div>
           <a href="signin.html" class="signin_button">Sign in/Sign up</a>
@@ -34,7 +40,7 @@
         <div class="search">
           <div class="search-input">
             <input type="text" placeholder="search" />
-            <div class="search-icon"><i class="fas fa-search"></i></div>
+            <div class="search-icon"><i alt="Search icon." class="fas fa-search"></i></div>
           </div>
         </div>
       </header>
@@ -48,15 +54,15 @@
             <a href="signin.html" class="cta button-create">Create an ad</a>
           </div>
           <div class="image-homepage">
-            <img src="images/homepage_image.png" img alt="A game controller is hovering over a hand." class="imgdesign-home" />
+            <img src="images/homepage_image.png" alt="A game controller is hovering over a hand." class="imgdesign-home" />
           </div>
           <section class="ipad-signin">
-            <img src="images/homepage_image.png" img alt="A game controller is hovering over a hand." class="ipad-signin__image" />
+            <img src="images/homepage_image.png" alt="A game controller is hovering over a hand." class="ipad-signin__image" />
             <a href="signin.html" class="ipad-signin__button">Sign in/Sign up</a>
           </section>
         </section>
-        <label for="menu-label"><p class="menu">menu</p></label>
-        <input type="checkbox" id="menu" />
+        <label for="menu-label" class="menu">menu</label>
+        <input type="checkbox" id="menu-label" />
         <div class="menu-slider">
           <h2>Menu</h2>
           <ul>
