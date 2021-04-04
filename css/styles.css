@@ -1,3 +1,6 @@
+@import 'imports/variables.css';
+@import 'imports/typography.css';
+
 @font-face {
   font-family: 'Closeness Outline';
   src: url('../Fonts/closeness.outline-regular.ttf') format('truetype');
@@ -14,8 +17,7 @@
 }
 
 body {
-  background: linear-gradient(#3a6186, #8a253e);
-  font-family: 'Montserrat Regular';
+  background: var(--gradient-colour);
   height: 100%;
   margin: 0 10px;
   background-repeat: no-repeat;
@@ -40,12 +42,12 @@ body {
   top: 0;
   left: 0;
   padding: 3px 10px;
-  color: #1b203d;
+  color: var(--darkblue-colour);
   cursor: pointer;
 }
 
 .search-input {
-  border: 3px solid #1b203d;
+  border: 3px solid var(--darkblue-colour);
   border-radius: 30px;
   width: 100%;
   height: 25px;
@@ -59,7 +61,6 @@ body {
   outline: none;
   background: transparent;
   padding: 0 40px;
-  font-size: 0.75rem;
 }
 
 .logo {
@@ -74,13 +75,6 @@ body {
 nav {
   margin-top: 30px;
   margin-left: 5px;
-  font-family: 'Montserrat SemiBold';
-}
-
-nav a {
-  text-decoration: none;
-  color: #1b203d;
-  font-size: 0.75rem;
 }
 
 .nav_textlinks {
@@ -94,13 +88,9 @@ nav a {
   padding: 1rem;
 }
 
-.current {
-  text-decoration: underline 0.2rem;
-}
-
 .hamburger-label {
   float: left;
-  color: #1b203d;
+  color: var(--darkblue-colour);
   padding: 10px;
   margin-top: -50px;
   font-size: 1.5rem;
@@ -128,9 +118,7 @@ nav a {
 
 .signin_button {
   float: right;
-  border: 2px solid #c7732e;
-  color: #1b203d;
-  font-size: 0.75rem;
+  border: 2px solid var(--orange-colour);
   padding: 8px 25px;
   margin-top: -10px;
   margin-right: 20px;
@@ -142,30 +130,22 @@ nav a {
   box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
 }
 
-.ipad-signin__button {
-  text-decoration: none;
-  color: #1b203d;
-}
-
 .menu {
   transform: rotate(90deg);
   float: left;
-  color: #3a6186;
   padding: 5px 10px;
   background-color: #fff;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
-  font-size: 0.75rem;
-  font-family: 'Montserrat SemiBold';
   position: relative;
   left: 156px;
   top: 20px;
-  border: 1px solid #1b203d;
+  border: 1px solid var(--darkblue-colour);
 }
 
 .menu-slider {
   background-color: #fff;
-  border: 1px solid #1b203d;
+  border: 1px solid var(--darkblue-colour);
   border-radius: 5px;
   padding: 20px 50px 50px 50px;
   position: absolute;
@@ -179,11 +159,6 @@ nav a {
   left: 0;
 }
 
-.menu-slider a {
-  text-decoration: none;
-  color: #1b203d;
-}
-
 .menu-slider li {
   display: block;
   padding: 10px 0;
@@ -193,43 +168,18 @@ nav a {
   display: none;
 }
 
-h1 {
-  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
-  color: #8a253e;
-  letter-spacing: 0.3rem;
-  font-size: 2.3125rem;
-  text-align: center;
-  padding: 20px 10px;
-}
-
-h2 {
-  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
-  color: #3a6186;
-  letter-spacing: 0.3rem;
-  font-size: 1.7rem;
-}
-
 .cta {
-  text-decoration: none;
-  color: #3a6186;
-  font-size: 1rem;
-  font-family: 'Montserrat SemiBold';
+  display: block;
+  border: #e8ddba solid 0.3rem;
+  border-radius: 30px;
 }
 
 .button-explore {
-  display: block;
-  border: #e8ddba solid 0.3rem;
   background-color: #e8ddba;
-  border-radius: 30px;
-  text-align: center;
 }
 
 .button-create {
-  display: block;
-  border: #e8ddba solid 0.3rem;
-  border-radius: 30px;
   background-color: #fff;
-  text-align: center;
 }
 
 main img {
@@ -242,11 +192,8 @@ main img {
 }
 
 footer {
-  text-align: center;
-  font-size: 0.6rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  color: grey;
 }
 
 /*Home page, 3 responsive sizes:*/
@@ -285,7 +232,7 @@ footer {
   }
 
   .nav_textlinks {
-    border: 2px solid #8a253e;
+    border: 2px solid var(--darkpink-colour);
     padding: 5px;
     background-color: #f2ecd9;
     box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
@@ -336,7 +283,7 @@ footer {
   .ipad-signin__button {
     font-size: 0.75rem;
     padding: 20px 30px;
-    border: 2px solid #c7732e;
+    border: 2px solid var(--orange-colour);
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     letter-spacing: 0.1rem;

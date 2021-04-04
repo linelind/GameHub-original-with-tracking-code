@@ -1,0 +1,71 @@
+body {
+  font-family: 'Montserrat Regular';
+}
+
+nav a {
+  font-family: 'Montserrat SemiBold';
+  text-decoration: none;
+  color: var(--darkblue-colour);
+  font-size: 0.75rem;
+}
+
+.current {
+  text-decoration: underline 0.2rem;
+}
+
+input {
+  font-size: 0.75rem;
+}
+
+.menu {
+  color: var(--lightblue-colour);
+  font-size: 0.75rem;
+  font-family: 'Montserrat SemiBold';
+}
+
+.menu-slider a {
+  text-decoration: none;
+  color: var(--darkblue-colour);
+}
+
+h1 {
+  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--darkpink-colour);
+  letter-spacing: 0.3rem;
+  font-size: 2.3125rem;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+h2 {
+  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--lightblue-colour);
+  letter-spacing: 0.3rem;
+  font-size: 1.7rem;
+}
+
+.cta {
+  text-decoration: none;
+  color: var(--lightblue-colour);
+  font-size: 1rem;
+  font-family: 'Montserrat SemiBold';
+  text-align: center;
+}
+
+/*
+.signin_button {
+  color: #1b203d;
+  font-size: 0.75rem;
+}
+*/
+
+.ipad-signin__button {
+  text-decoration: none;
+  color: var(--darkblue-colour);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+  color: grey;
+}
