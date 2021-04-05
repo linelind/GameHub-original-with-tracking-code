@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Closeness Outline';
   color: var(--lightblue-colour);
   letter-spacing: 0.3rem;
   font-size: 1.7rem;
@@ -57,12 +57,16 @@ h2 {
   color: var(--darkblue-colour);
 }
 
-footer {
-  text-align: center;
-  font-size: 0.6rem;
-  color: grey;
+.information_1 {
+  font-family: 'Montserrat SemiBold';
 }
 
 .cta {
   font-family: 'Montserrat SemiBold' Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.6rem;
+  color: grey;
 }
