@@ -20,8 +20,8 @@
             <ul class="navigation-links nav_textlinks">
               <li><a href="index.html">Home</a></li>
               <li><a href="shop.html">Shop</a></li>
-              <li><a href="newad.html">Sell</a></li>
-              <li><a href="contact.html" class="current">Contact</a></li>
+              <li><a href="newad.html" class="current">Sell</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a href="createaccount.html" class="nav_textlinks__small">Create account</a></li>
               <li><a href="userpage.html" class="nav_textlinks__small">Profile page</a></li>
               <li><a href="cart.html" class="nav_textlinks__small">Cart</a></li>
@@ -44,36 +44,26 @@
           </div>
         </div>
       </header>
-      <main class="contact-main">
-        <h1>Contact</h1>
-        <section class="contact-paragraph">
-          <p>Have a question?</p>
-          <p>Please fill out our contact form.</p>
-        </section>
-        <div class="contact-formbackground">
-          <form action="form-success.php" method="POST">
+      <main class="newad-main">
+        <h1>Create new ad</h1>
+        <div class="newad-background">
+          <form action="form-success.php" method="POST" class="newad-form">
             <div class="form-wrapper">
               <section class="contact-inputs">
-                <label for="name">Full name</label>
-                <input type="text" id="name" name="Name" required />
-                <label for="email">Email</label>
-                <input type="email" id="email" name="Email" required />
-                <label for="topic">Question topic</label>
-                <select id="topic" name="Choose topic">
-                  <option value="Placeholder"></option>
-                  <option value="Delivery">Delivery</option>
-                  <option value="Payment">Payment</option>
-                  <option value="Selling game">Selling game</option>
-                  <option value="Buying game">Buying game</option>
-                  <option value="Other">Other</option>
-                </select>
+                <label for="title">Game title</label>
+                <input type="text" id="title" name="Game title" required />
+                <label for="price">Price (in NOK)</label>
+                <input type="text" id="price" name="Price" required />
+                <label for="year">Year released</label>
+                <input type="text" id="year" name="Year" required />
               </section>
               <section class="contact-textarea">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <label for="description">Description</label>
+                <textarea id="description" name="description"></textarea>
+                <input type="button" value="upload images" class="upload-button" />
               </section>
             </div>
-            <input type="submit" value="Send" class="cta cta-send" />
+            <input type="submit" value="Publish" class="cta cta-publish" />
           </form>
         </div>
         <div class="menu-slider">

@@ -16,6 +16,7 @@
   src: url('../Fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 
+/*Layout*/
 body {
   background: var(--gradient-colour);
   height: 100%;
@@ -25,13 +26,27 @@ body {
 }
 
 .white-background {
-  background-color: #fff;
   margin: 30px;
   padding: 30px 20px 20px 20px;
   border-radius: 50px;
   min-height: 300px;
 }
 
+.white-background,
+.signin_button,
+.menu,
+.menu-slider,
+.button-create,
+.ipad-signin__button {
+  background-color: #fff;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/*Navigation*/
 .search {
   margin: 30px auto;
   max-width: 300px;
@@ -122,19 +137,12 @@ nav {
   padding: 8px 25px;
   margin-top: -10px;
   margin-right: 20px;
-  background-color: #fff;
-}
-
-.active_signin {
-  background-color: #f2ecd9;
-  box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
 }
 
 .menu {
   transform: rotate(90deg);
   float: left;
   padding: 5px 10px;
-  background-color: #fff;
   border-radius: 5px 5px 0px 0px;
   cursor: pointer;
   position: relative;
@@ -144,13 +152,12 @@ nav {
 }
 
 .menu-slider {
-  background-color: #fff;
   border: 1px solid var(--darkblue-colour);
   border-radius: 5px;
   padding: 20px 50px 50px 50px;
   position: absolute;
   top: 150px;
-  left: -223px;
+  left: -224px;
   transition-property: left;
   transition-duration: 2s;
 }
@@ -169,17 +176,36 @@ nav {
 }
 
 .cta {
+  background: var(--gradient-colour);
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+}
+
+form input,
+select,
+textarea {
+  border: 2px solid var(--darkblue-colour);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-main, .account-main, .newad-main {
+  margin: auto;
+  text-align: center;
+}
+
+/*Home page*/
+.homecta {
   display: block;
-  border: #e8ddba solid 0.3rem;
+  border: var(--homecta-colour) solid 0.3rem;
   border-radius: 30px;
 }
 
 .button-explore {
-  background-color: #e8ddba;
-}
-
-.button-create {
-  background-color: #fff;
+  background-color: var(--homecta-colour);
 }
 
 main img {
@@ -191,103 +217,50 @@ main img {
   justify-content: space-around;
 }
 
-footer {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+/*Contact page*/
+
+.form-wrapper {
+  display: flex;
 }
 
-/*Home page, 3 responsive sizes:*/
-/*------------------------------*/
-/*mobil*/
-@media only screen and (max-width: 599px) {
-  nav,
-  #hamburger-menu,
-  .menu,
-  .navigation__icon,
-  .image-homepage,
-  .signin_button,
-  .ipad-signin__image {
-    display: none;
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
   }
+}
 
-  .white-background {
-    margin: 30px 10px;
-  }
+.cta-send {
+  position: relative;
+  text-align: center;
+}
 
-  .logo {
-    max-width: 90px;
-  }
+/*Create account page*/
 
-  .search {
-    max-width: 200px;
-  }
+.newaccount-background {
+  background-color:var(--lightyellow-colour);
+  border: 3px solid var(--orange-colour);
+}
 
-  .search-input input {
-    width: 70%;
-  }
+.checkbox {
+  margin:10px 0;
+}
 
-  nav li {
-    display: block;
-    margin: 20px 20px;
-  }
+.active_signin {
+  background-color: var(--lightyellow-colour);
+  box-shadow: 1px 1px 1px 1px var(--shadow-color);
+}
 
-  .nav_textlinks {
-    border: 2px solid var(--darkpink-colour);
-    padding: 5px;
-    background-color: #f2ecd9;
-    box-shadow: 1px 1px 1px 1px rgba(109, 67, 32, 0.5);
-    margin-top: -80px;
-  }
+/*Create new ad (sell) page*/
+.newad-background {
+  background-color: var(--lightyellow-colour);
+  border-radius: 50px;
+  border: 3px solid var(--orange-colour);
+}
 
-  h1 {
-    font-size: 1.3125rem;
-  }
-
-  .container {
-    flex-direction: column;
-    gap: 20px;
-    position: relative;
-    align-items: center;
-  }
-
-  .explore-div {
-    order: 2;
-  }
-
-  .create-div {
-    order: 3;
-  }
-
-  .button-explore {
-    padding: 20px 30px;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    border: #e8ddba solid 0.2rem;
-    max-width: 400px;
-    min-width: 118.067px;
-  }
-
-  .button-create {
-    padding: 20px 30px;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    border: #e8ddba solid 0.2rem;
-    max-width: 400px;
-    min-width: 118.067px;
-  }
-
-  .ipad-signin {
-    margin: 20px auto;
-  }
-
-  .ipad-signin__button {
-    font-size: 0.75rem;
-    padding: 20px 30px;
-    border: 2px solid var(--orange-colour);
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-    letter-spacing: 0.1rem;
-    order: 1;
-    min-width: 118.067px;
-  }
+.upload-button {
+  width: 50%;
+  background: #fff;
+  border-radius: 50px;
 }

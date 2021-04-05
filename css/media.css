@@ -1,0 +1,402 @@
+
+/*------------------------------*/
+/*mobil*/
+@media only screen and (max-width: 599px) {
+  nav,
+  #hamburger-menu,
+  .menu,
+  .navigation__icon,
+  .image-homepage,
+  .signin_button,
+  .ipad-signin__image {
+    display: none;
+  }
+
+  .white-background {
+    margin: 30px 10px;
+  }
+
+  .logo {
+    max-width: 90px;
+  }
+
+  .search {
+    max-width: 200px;
+  }
+
+  .search-input input {
+    width: 70%;
+  }
+
+  nav li {
+    display: block;
+    margin: 20px 20px;
+  }
+
+  .nav_textlinks {
+    border: 2px solid var(--darkpink-colour);
+    padding: 5px;
+    background-color: var(--lightyellow-colour);
+    box-shadow: 1px 1px 1px 1px var(--shadow-color);
+    margin-top: -80px;
+  }
+
+  h1 {
+    font-size: 1.3125rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    align-items: center;
+  }
+
+  .explore-div {
+    order: 2;
+  }
+
+  .create-div {
+    order: 3;
+  }
+
+  .button-explore {
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    border: var(--homecta-colour) solid 0.2rem;
+    max-width: 400px;
+    min-width: 118.067px;
+  }
+
+  .button-create {
+    padding: 20px 30px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    border: var(--homecta-colour) solid 0.2rem;
+    max-width: 400px;
+    min-width: 118.067px;
+  }
+
+  .ipad-signin {
+    margin: 20px auto;
+  }
+
+  .ipad-signin__button {
+    font-size: 0.75rem;
+    padding: 20px 30px;
+    border: 2px solid var(--orange-colour);
+    border-radius: 15px;
+    letter-spacing: 0.1rem;
+    order: 1;
+    min-width: 118.067px;
+  }
+
+  .contact-main {
+    max-width: 350px;
+  }
+
+  .account-main {
+    max-width: 300px;
+
+  }
+  
+  .contact-paragraph {
+    margin-top: -20px;
+  }
+  
+  .form-wrapper {
+    flex-direction: column;
+    margin: 30px 10px;
+  }
+  
+  textarea {
+    min-height: 50px;
+  }
+
+  form,
+  .contact-paragraph {
+    font-size: 0.75rem;
+  }
+
+  .newaccount-background, .newad-background {
+    padding: 0 20px;
+    border: 2px solid var(--orange-colour);  
+    border-radius: 50px;
+  }
+
+  .upload-button {
+    margin-top: 15px;
+  }
+
+  .newad-form {
+    max-width: 300px;
+    margin: auto;
+
+  }
+
+}
+
+
+/*------------------------------*/
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .menu,
+  .navigation__icon,
+  .image-homepage,
+  .signin_button,
+  nav,
+  #hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-label {
+    margin: -70px auto auto 20px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: inline-block;
+    float: left;
+    position: fixed;
+    z-index: 2;
+  }
+
+  nav li {
+    display: block;
+    margin: 20px 20px;
+  }
+
+  .nav_textlinks {
+    border: 2px solid var(--darkpink-colour);
+    padding: 5px;
+    background-color: #f2ecd9;
+    box-shadow: 1px 1px 1px 1px var(--shadow-color);
+    margin-top: -90px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .explore-div {
+    order: 2;
+    align-self: center;
+  }
+
+  .create-div {
+    order: 3;
+    align-self: center;
+    margin-top: -2px;
+  }
+
+  .button-explore {
+    padding: 40px 80px;
+    min-width: 139.333px;
+  }
+
+  .button-create {
+    padding: 40px 80px;
+    min-width: 139.333px;
+  }
+
+  .ipad-signin {
+    order: 1;
+    display: grid;
+  }
+
+  .ipad-signin__image {
+    padding: 0 100px;
+    background-color: #d6dce2;
+    z-index: 1;
+  }
+
+  .ipad-signin__button {
+    z-index: 2;
+    place-self: center;
+    font-size: 1.3125rem;
+    padding: 20px 50px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin-top: -280px;
+    letter-spacing: 0.2rem;
+  }
+
+  .contact-main {
+    max-width: 400px;
+  }
+
+  .account-main {
+    max-width: 500px;
+  }
+
+  .contact-paragraph {
+    margin-top: -20px;
+  }
+  
+  .form-wrapper {
+    flex-direction: column;
+    margin: 30px 10px;
+  }
+  
+  textarea {
+    min-height: 50px;
+  }
+
+  form,
+  .contact-paragraph {
+    font-size: 1rem;
+  }
+
+  .newaccount-background {
+    border-radius: 50px 0;
+    padding: 10px 80px;
+    max-width: 400px;
+  }
+
+  .newad-background {
+    margin:0 50px;
+    padding: 10px 50px;
+    }
+
+  .upload-button {
+    margin-top: 20px;
+  }
+
+  .newad-form {
+    max-width: 400px;
+    margin: auto;
+
+  }
+
+}
+
+/*------------------------------*/
+/*laptop**/
+@media only screen and (min-width: 1200px) {
+  .ipad-signin,
+  #hamburger-menu,
+  .hamburger-label {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    width: 90%;
+    margin-top: -30px;
+    align-items: center;
+    float: right;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: -80px;
+  }
+
+  .navigation-links {
+    display: flex;
+    display: inline;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  .nav_textlinks {
+    margin-top: 0;
+  }
+
+  .nav_textlinks__small {
+    display: none;
+  }
+
+  h1 {
+    padding: 0;
+  }
+
+  .button-explore {
+    padding: 30px 35px;
+    border-radius: 30px;
+    min-width: 139.334px;
+  }
+
+  .button-create {
+    padding: 30px 35px;
+    border-radius: 30px;
+    min-width: 139.334px;
+  }
+
+  .explore-div {
+    margin: 2rem;
+    order: 1;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .create-div {
+    margin: 2rem;
+    order: 3;
+    position: relative;
+    align-self: flex-end;
+  }
+
+  .image-homepage {
+    margin: 2rem;
+    order: 2;
+  }
+
+  .imgdesign-home {
+    border-radius: 50%;
+  }
+
+  .contact-main, .account-main {
+    max-width: 1000px;
+  }
+  
+  .contact-paragraph {
+    margin-bottom: 50px;
+  }
+  
+  .form-wrapper {
+    flex-direction: row;
+    margin: 0 60px;
+  }
+  
+  .contact-inputs,
+  .contact-textarea {
+    margin: 50px 70px;
+  }
+  
+  textarea {
+    height: 100%;
+  }
+  
+  form,
+  .contact-paragraph {
+    font-size: 1rem;
+  }
+
+  .newaccount-background {
+    max-width: 550px;
+    border-radius: 50px 0;
+    margin: auto;
+  }
+
+  .newad-background {
+    margin:0 100px;
+  }
+
+  .cta {
+    font-size: 1.125rem;
+  }
+}
+
+/*------------------------------*/
+/*larger screens**/
+@media only screen and (min-width: 1500px) {

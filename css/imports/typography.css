@@ -44,20 +44,13 @@ h2 {
   font-size: 1.7rem;
 }
 
-.cta {
+.homecta {
   text-decoration: none;
   color: var(--lightblue-colour);
   font-size: 1rem;
   font-family: 'Montserrat SemiBold';
   text-align: center;
 }
-
-/*
-.signin_button {
-  color: #1b203d;
-  font-size: 0.75rem;
-}
-*/
 
 .ipad-signin__button {
   text-decoration: none;
@@ -68,4 +61,8 @@ footer {
   text-align: center;
   font-size: 0.6rem;
   color: grey;
+}
+
+.cta {
+  font-family: 'Montserrat SemiBold' Verdana, Geneva, Tahoma, sans-serif;
 }
