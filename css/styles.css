@@ -384,18 +384,25 @@ textarea {
   background-color: var(--lightblue-colour);
 }
 
+
 .product-frame {
   background-color: #fff;
   border-radius: 50px;
   padding: 20px;
   font-size: 0.75rem;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .product-frame img {
   max-height: 70px;
 }
 
-.product-frame_1, .product-frame_2 {
-  flex: 1;
+.view-button {
+  color: #fff;
+  background-color: var(--darkblue-colour);
+  border-radius: 50px;
+  padding: 5px 15px;
+  border: none;
+  text-decoration: none;
 }

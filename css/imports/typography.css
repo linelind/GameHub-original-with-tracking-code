@@ -61,8 +61,9 @@ h2 {
   font-family: 'Montserrat SemiBold';
 }
 
-.cta {
-  font-family: 'Montserrat SemiBold' Verdana, Geneva, Tahoma, sans-serif;
+.cta,
+.view-button {
+  font-family: 'Montserrat SemiBold';
 }
 
 footer {
