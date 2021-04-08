@@ -293,7 +293,6 @@ textarea {
   margin: auto;
 }
 
-
 .userpage-main p {
   padding:5px 0;
 }
@@ -391,18 +390,37 @@ textarea {
   padding: 20px;
   font-size: 0.75rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-template-areas: 
+  "title title title"
+  "image image used"
+  "image image price"
+  "image image button";
 }
 
+.product-frame h3 {grid-area: title;}
+.product-frame img {grid-area: image;}
+.product-frame .used-label {grid-area: used;}
+.product-frame .price {grid-area: price;}
+.product-frame a {grid-area: button;}
+
+
 .product-frame img {
-  max-height: 70px;
+  max-height: 90px;
+}
+
+.product-frame h3 {
+  margin: 5px 0;
 }
 
 .view-button {
   color: #fff;
   background-color: var(--darkblue-colour);
   border-radius: 50px;
-  padding: 5px 15px;
+  padding: 5px 7px;
   border: none;
   text-decoration: none;
+  text-align: center;
+  max-width: 50px;
 }
+
