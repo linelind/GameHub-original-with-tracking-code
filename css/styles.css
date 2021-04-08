@@ -370,6 +370,7 @@ textarea {
 
 .account-heading {
   margin-left:30px;
+  margin-top: 80px;
 
 }
 
@@ -379,7 +380,7 @@ textarea {
   gap: 20px;
   border: 2px solid var(--lightblue-colour);
   margin-top: -30px;
-  padding: 10px 20px; 
+  padding: 20px 20px; 
   background-color: var(--lightblue-colour);
 }
 
@@ -392,8 +393,8 @@ textarea {
   display: grid;
   align-items: center;
   grid-template-areas: 
+  "year year used"
   "title title title"
-  "image image used"
   "image image price"
   "image image button";
 }
@@ -401,17 +402,31 @@ textarea {
 .product-frame h3 {grid-area: title;}
 .product-frame img {grid-area: image;}
 .product-frame .used-label {grid-area: used;}
-.product-frame .price {grid-area: price;}
+.price {grid-area: price;}
 .product-frame a {grid-area: button;}
-
+.year {grid-area: year;}
 
 .product-frame img {
   max-height: 90px;
+  margin: 5px;
 }
 
 .product-frame h3 {
-  margin: 5px 0;
+  margin: -15px 0 5px 5px;
 }
+
+.year {
+  margin-left: 5px;
+}
+
+.product-frame .used-label {
+  margin: 0;
+  margin-top: -63px;
+ }
+
+ .price {
+   margin-bottom: -25px;
+ }
 
 .view-button {
   color: #fff;
@@ -422,5 +437,7 @@ textarea {
   text-decoration: none;
   text-align: center;
   max-width: 50px;
+  margin-bottom: -10px;
+  box-shadow: 0 1px 2px 0 var(--grey-shadow);
 }
 
