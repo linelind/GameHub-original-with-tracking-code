@@ -395,6 +395,11 @@
   .cta {
     font-size: 1.125rem;
   }
+
+  .shop-main {
+    max-width: 1000px;
+    margin: auto;
+  }
 }
 
 /*------------------------------*/
