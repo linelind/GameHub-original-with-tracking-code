@@ -195,6 +195,7 @@ text-align: left;
   color: #fff;
   padding: 10px 30px;
   border: none;
+  text-decoration: none;
 }
 
 .used-label {
@@ -258,6 +259,12 @@ textarea {
   text-align: center;
 }
 
+.contact-formbackground {
+  background-color: var(--lightblue-colour);
+  border: 3px solid var(--blue-colour);
+  border-radius: 5px;
+}
+
 /*Create account page*/
 
 .newaccount-background {
@@ -315,7 +322,7 @@ textarea {
 
 .information-container {
   display: flex;
-  border: 2px solid var(--lightblue-colour);
+  border: 2px solid var(--blue-colour);
   padding: 20px 50px;
   margin-right:100px;
   margin-top: -30px;
@@ -332,7 +339,7 @@ textarea {
 
 .password-button {
   border-radius: 50px;
-  border: 3px solid var(--lightblue-colour);
+  border: 3px solid var(--blue-colour);
   padding: 5px 10px;
   background-color: #fff;
 }
@@ -360,7 +367,7 @@ textarea {
 }
 
 .orderhisory-frame {
-  border: 2px solid var(--lightblue-colour);
+  border: 2px solid var(--blue-colour);
   margin-top: -30px;
 }
 
@@ -369,20 +376,25 @@ textarea {
 }
 
 .account-heading {
-  margin-left:30px;
+  margin-left:50px;
   margin-top: 80px;
-
 }
 
 .activeads-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  border: 2px solid var(--lightblue-colour);
-  margin-top: -30px;
+  gap: 10px;
+  border: 2px solid var(--blue-colour);
   padding: 20px 20px; 
-  background-color: var(--lightblue-colour);
+  background-color: var(--blue-colour);
+  margin: auto;
+  border-radius: 50px;
 }
+
+.heading_activeads {
+  margin: 70px 0 -7px 50px;
+}
+
 
 .product-frame {
   background-color: #fff;
@@ -391,8 +403,8 @@ textarea {
   min-width: 184px;
   min-height: 155px;
   font-size: 0.75rem;
-  border: 2px solid var(--lightblue-colour);
-  box-shadow: 0px 2px 2px 0px var(--lightblue-colour);
+  border: 2px solid var(--blue-colour);
+  box-shadow: 0px 2px 2px 0px var(--blue-colour);
   overflow: hidden;
   display: grid;
   align-items: center;
@@ -451,10 +463,11 @@ textarea {
 .products-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  max-width: 800px;
-  margin: 80px auto;
+  gap: 30px;
+  margin-top: 80px;
   border-radius: 50px;
+  background-color: var(--lightblue-colour);
+  padding:30px 100px;
 }
 
 .filter {

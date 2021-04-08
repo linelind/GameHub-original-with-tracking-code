@@ -18,7 +18,7 @@ input {
 }
 
 .menu {
-  color: var(--lightblue-colour);
+  color: var(--blue-colour);
   font-size: 0.75rem;
   font-family: 'Montserrat SemiBold';
 }
@@ -39,14 +39,14 @@ h1 {
 
 h2 {
   font-family: 'Closeness Outline';
-  color: var(--lightblue-colour);
+  color: var(--blue-colour);
   letter-spacing: 0.3rem;
   font-size: 1.7rem;
 }
 
 .homecta {
   text-decoration: none;
-  color: var(--lightblue-colour);
+  color: var(--blue-colour);
   font-size: 1rem;
   font-family: 'Montserrat SemiBold';
   text-align: center;

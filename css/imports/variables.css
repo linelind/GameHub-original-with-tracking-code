@@ -1,7 +1,8 @@
 :root {
   --gradient-colour: linear-gradient(#3a6186, #8a253e);
   --darkblue-colour: #1b203d;
-  --lightblue-colour: #3a6186;
+  --blue-colour: #3a6186;
+  --lightblue-colour: #bfd0df;
   --darkpink-colour: #8a253e;
   --orange-colour: #c7732e;
   --lightyellow-colour: #f5eed9;
