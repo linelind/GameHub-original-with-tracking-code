@@ -587,3 +587,14 @@ textarea {
   position: relative;
   top:380px;
 }
+
+/*Checkout*/
+.main-checkout {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-checkout h2 {
+  text-align: center;
+
+}
