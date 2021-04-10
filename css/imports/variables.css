@@ -1,5 +1,6 @@
 :root {
   --gradient-colour: linear-gradient(#3a6186, #8a253e);
+  --gradient-button: linear-gradient(#606688, #1b203d);
   --darkblue-colour: #1b203d;
   --blue-colour: #3a6186;
   --lightblue-colour: #bfd0df;
