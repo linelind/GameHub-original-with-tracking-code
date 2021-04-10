@@ -401,7 +401,7 @@ textarea {
 }
 
 .product-suggestionslider {
-  background-color: #fff;
+  background-color: var(--blue-colour);
   border: none;
   padding: 0;
   gap: 10px;
@@ -432,4 +432,36 @@ textarea {
 
 .main-checkout h2 {
   text-align: center;
+}
+
+/*Success page*/
+.suksess-main {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-check-circle {
+  color: #01844b;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.success-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.success-contact {
+  margin: 50px 0;
+}
+
+.success-button {
+  text-decoration: none;
+  background: linear-gradient(#dcc886, #d6b23a);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: var(--darkblue-colour);
 }

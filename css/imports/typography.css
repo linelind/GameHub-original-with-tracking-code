@@ -84,6 +84,11 @@ h2 {
   font-size: 0.75rem;
 }
 
+.success-info {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 footer {
   text-align: center;
   font-size: 0.6rem;
