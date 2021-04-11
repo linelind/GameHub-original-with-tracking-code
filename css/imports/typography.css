@@ -3,72 +3,71 @@ body {
   font-size: 1rem;
 }
 
-nav a {
+.cta,
+.blue-button,
+.information_1,
+.homecta,
+.menu,
+nav a,
+.heading-specs {
   font-family: 'Montserrat SemiBold';
-  text-decoration: none;
-  color: var(--darkblue-colour);
+}
+
+nav a,
+input,
+.menu {
   font-size: 0.75rem;
+}
+
+.productpage-year,
+.product-frame,
+.heading-specs,
+.success-info {
+  font-size: 0.75rem;
+}
+
+.main-checkout h3,
+.success-info,
+.homecta,
+.buybutton {
+  font-size: 1rem;
+}
+
+footer p {
+  font-size: 0.6rem;
 }
 
 .current {
   text-decoration: solid underline var(--darkblue-colour) 0.2rem;
 }
 
-input {
-  font-size: 0.75rem;
-}
-
-.menu {
+.menu,
+.homecta,
+h2 {
   color: var(--blue-colour);
-  font-size: 0.75rem;
-  font-family: 'Montserrat SemiBold';
 }
 
-.menu-slider a {
-  text-decoration: none;
+.menu-slider a,
+.ipad-signin__button,
+nav a {
   color: var(--darkblue-colour);
 }
 
 h1 {
-  font-family: 'Closeness Outline', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Closeness Outline';
   color: var(--darkpink-colour);
   letter-spacing: 0.3rem;
   font-size: 2.3125rem;
-  text-align: center;
   padding: 20px 10px;
 }
 
 h2 {
   font-family: 'Closeness Outline';
-  color: var(--blue-colour);
   letter-spacing: 0.3rem;
   font-size: 1.7rem;
 }
 
-.homecta {
-  text-decoration: none;
-  color: var(--blue-colour);
-  font-size: 1rem;
-  font-family: 'Montserrat SemiBold';
-  text-align: center;
-}
-
-.ipad-signin__button {
-  text-decoration: none;
-  color: var(--darkblue-colour);
-}
-
-.information_1 {
-  font-family: 'Montserrat SemiBold';
-}
-
-.cta,
-.blue-button {
-  font-family: 'Montserrat SemiBold';
-}
-
 .buybutton {
-  font-size: 1rem;
   letter-spacing: 0.1rem;
 }
 
@@ -79,16 +78,14 @@ h2 {
   letter-spacing: 0.07rem;
 }
 
-.productpage-year,
-.product-frame {
-  font-size: 0.75rem;
-}
-
 .heading-specs {
-  font-family: 'Montserrat SemiBold';
-  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0;
+}
+
+.cart-productinfo p {
+  line-height: 10px;
+  font-size: 0.8rem;
 }
 
 .cart-total {
@@ -96,13 +93,27 @@ h2 {
   font-weight: bold;
 }
 
-.success-info {
-  font-size: 0.75rem;
-  line-height: 1rem;
+h1,
+.homecta,
+.cta,
+.cta-send,
+.blue-button,
+.used-label,
+footer p,
+.main-checkout h2,
+.contact-main,
+.newad-main,
+.suksess-main,
+.success-container {
+  text-align: center;
 }
 
-footer p {
-  text-align: center;
-  font-size: 0.6rem;
-  color: grey;
+.ipad-signin__button,
+.homecta,
+.menu-slider a,
+nav a,
+.cta,
+.blue-button,
+.success-button {
+  text-decoration: none;
 }

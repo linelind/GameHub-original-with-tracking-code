@@ -29,7 +29,6 @@ body {
 .white-background {
   margin: 30px;
   padding: 30px 20px 20px 20px;
-  border-radius: 50px;
   min-height: 300px;
 }
 
@@ -39,19 +38,49 @@ body {
 .menu-slider,
 .button-create,
 .ipad-signin__button {
-  background-color: #fff;
+  background-color: var(--white);
+}
+
+.white-background,
+.product-frame,
+.productslider,
+.cta,
+.blue-button,
+.products-container,
+.newad-background,
+.upload-button,
+.password-button,
+.edit-button,
+.success-button {
+  border-radius: 50px;
 }
 
 footer {
   margin-top: 2rem;
   margin-bottom: 1rem;
+  color: grey;
 }
 
 /*General content*/
+main {
+  animation: smooth-loading 0.7s forwards;
+  opacity: 0;
+}
+
+@keyframes smooth-loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .product-frame {
-  background-color: #fff;
-  border-radius: 50px;
+  background-color: var(--white);
   padding: 20px;
   min-width: 165px;
   min-height: 155px;
@@ -107,28 +136,21 @@ footer {
   display: grid;
   gap: 10px;
   margin: auto;
-  border-radius: 50px;
   background-color: var(--blue-colour);
 }
 
 .cta {
   background: var(--gradient-colour);
-  border-radius: 50px;
-  color: #fff;
+  color: var(--white);
   padding: 10px 30px;
   border: none;
-  text-decoration: none;
   max-width: 150px;
-  text-align: center;
 }
 
 .blue-button {
-  color: #fff;
+  color: var(--white);
   background: var(--gradient-button);
-  border-radius: 50px;
   border: none;
-  text-decoration: none;
-  text-align: center;
   box-shadow: 0 1px 2px 0 var(--grey-shadow);
 }
 
@@ -147,7 +169,6 @@ footer {
   padding: 5px 0px;
   min-width: 50px;
   max-width: 50px;
-  text-align: center;
 }
 
 .new-label {
@@ -166,7 +187,6 @@ textarea {
 .contact-main,
 .newad-main {
   margin: auto;
-  text-align: center;
 }
 
 .shop-main {
@@ -177,7 +197,6 @@ textarea {
   display: grid;
   gap: 30px;
   margin-top: 80px;
-  border-radius: 50px;
   background-color: var(--lightyellow-colour);
 }
 
@@ -215,7 +234,6 @@ textarea {
 
 .cta-send {
   position: relative;
-  text-align: center;
 }
 
 .contact-formbackground {
@@ -245,17 +263,19 @@ textarea {
   box-shadow: 1px 1px 1px 1px var(--shadow-color);
 }
 
+.cta-publish {
+  margin-bottom: 30px;
+}
+
 /*Create new ad (sell) page*/
 .newad-background {
   background-color: var(--lightyellow-colour);
-  border-radius: 50px;
   border: 3px solid var(--orange-colour);
 }
 
 .upload-button {
   width: 50%;
-  background: #fff;
-  border-radius: 50px;
+  background: var(--white);
 }
 
 /*Account page/User page*/
@@ -274,16 +294,14 @@ textarea {
 }
 
 .password-button {
-  border-radius: 50px;
   border: 3px solid var(--blue-colour);
-  background-color: #fff;
+  background-color: var(--white);
   padding: 5px 10px;
 }
 
 .edit-button {
-  border-radius: 50px;
   border: 3px solid var(--orange-colour);
-  background-color: #fff;
+  background-color: var(--white);
   padding: 5px 20px;
   margin-top: 20px;
 }
@@ -312,209 +330,10 @@ textarea {
   background-color: var(--background-fairblue);
 }
 
-/*Product page*/
-.product-main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.product-title {
-  text-align: left;
-  margin: 0 0 0 -10px;
-}
-
-.productspecific-container {
-  display: flex;
-  gap: 60px;
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
-
-.productspecific-container_images {
-  flex: 1;
-  display: flex;
-  gap: 20px;
-}
-
-.productspecific-container_text {
-  flex: 2;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-    'newproduct newproduct'
-    'producttitle producttitle'
-    'productyear productyear'
-    'productp1 productp1'
-    'productp2 productp2'
-    'productprice productbuy';
-}
-
-.product-title {
-  grid-area: producttitle;
-}
-.productspecific-container_text .new-label {
-  grid-area: newproduct;
-}
-.productpage-year {
-  grid-area: productyear;
-}
-.productpage-description1 {
-  grid-area: productp1;
-}
-.productpage-description2 {
-  grid-area: productp2;
-}
-.productpage-price {
-  grid-area: productprice;
-}
-.buybutton {
-  grid-area: productbuy;
-}
-
-.specs {
-  background-color: #f5eed9;
-  padding: 0 35px 55px 35px;
-  font-size: 0.7rem;
-  flex: 1;
-  max-height: 200px;
-}
-
-.heading-specs {
-  color: black;
-  padding-top: 15px;
-}
-
-.product-image {
-  max-width: 150px;
-}
-
-.image-tiny {
-  max-width: 50px;
-}
-
-.productpage-year {
-  margin-top: 0;
-}
-
-.productpage-description2 {
-  margin-bottom: 50px;
-}
-
-.product-suggestionslider {
-  background-color: var(--blue-colour);
-  border: none;
-  padding: 0;
-  gap: 10px;
-}
-
-/*Checkout*/
-.main-checkout {
-  max-width: 1000px;
-  margin: auto;
-}
-
-.main-checkout h2 {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.main-checkout h3 {
-  text-align: left;
-  font-size: 1rem;
-}
-
-.cart-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 30px 10px 20px;
-}
-
-.cart-productinfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.cart-section_seconditem {
-  background-color: var(--lightyellow-colour);
-}
-
-.cart-productinfo p {
-  line-height: 10px;
-  font-size: 0.8rem;
-  margin-left: 10px;
-  margin-top: 0;
-}
-
-.select-quantity {
-  min-width: 80px;
-}
-
-.cart-trash {
-  font-size: 0.8rem;
-  margin-top: 50px;
-}
-
-.cart-hide {
-  display: none;
-}
-
-.cart-total {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 30px;
-  background-color: var(--darkblue-colour);
-  color: #fff;
-}
-
-.checkout-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
-  margin: auto;
-}
-
-.checkout-form label,
-.checkout-form_small {
-  margin-top: 10px;
-}
-
-.checkout-form_small {
-  display: flex;
-  gap: 10px;
-  justify-content: space-evenly;
-}
-
-.payment-methods {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 3rem;
-  max-width: 600px;
-  margin: auto;
-}
-
-.payment-alternative {
-  padding: 20px 50px;
-  border: 2px solid var(--orange-colour);
-  border-radius: 5px;
-  color: var(--darkblue-colour);
-  margin-bottom: 50px;
-}
-
-#cvv {
-  max-width: 50%;
-}
-
-.placeorder-cta {
-  margin: 50px 0 30px 0;
-  align-self: center;
-  padding: 15px 40px;
-}
-
 /*Success page*/
 .suksess-main {
   max-width: 1000px;
   margin: auto;
-  text-align: center;
 }
 
 .fa-check-circle {
@@ -526,7 +345,6 @@ textarea {
 .success-container {
   max-width: 400px;
   margin: auto;
-  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -535,9 +353,7 @@ textarea {
 }
 
 .success-button {
-  text-decoration: none;
   background: linear-gradient(#dcc886, #d6b23a);
   padding: 10px 20px;
-  border-radius: 50px;
   color: var(--darkblue-colour);
 }

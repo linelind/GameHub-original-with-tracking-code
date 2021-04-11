@@ -1,0 +1,94 @@
+/*Product page*/
+.product-main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.product-title {
+  text-align: left;
+  margin: 0 0 0 -10px;
+}
+
+.productspecific-container {
+  display: flex;
+  gap: 60px;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.productspecific-container_images {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+.productspecific-container_text {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'newproduct newproduct'
+    'producttitle producttitle'
+    'productyear productyear'
+    'productp1 productp1'
+    'productp2 productp2'
+    'productprice productbuy';
+}
+
+.product-title {
+  grid-area: producttitle;
+}
+.productspecific-container_text .new-label {
+  grid-area: newproduct;
+}
+.productpage-year {
+  grid-area: productyear;
+}
+.productpage-description1 {
+  grid-area: productp1;
+}
+.productpage-description2 {
+  grid-area: productp2;
+}
+.productpage-price {
+  grid-area: productprice;
+}
+.buybutton {
+  grid-area: productbuy;
+}
+
+.specs {
+  background-color: var(--lightyellow-colour);
+  padding: 0 35px 55px 35px;
+  font-size: 0.7rem;
+  flex: 1;
+  max-height: 200px;
+}
+
+.heading-specs {
+  color: black;
+  padding-top: 15px;
+}
+
+.product-image {
+  max-width: 150px;
+}
+
+.image-tiny {
+  max-width: 50px;
+}
+
+.productpage-year {
+  margin-top: 0;
+}
+
+.productpage-description2 {
+  margin-bottom: 50px;
+}
+
+.product-suggestionslider {
+  background-color: var(--blue-colour);
+  border: none;
+  padding: 0;
+  gap: 10px;
+}

@@ -499,7 +499,7 @@
     max-width: 600px;
     padding: 0;
     gap: 20px;
-    background-color: #fff;
+    background-color: var(--white);
   }
 
   .products-container {
@@ -776,4 +776,39 @@
 /*------------------------------*/
 /*larger screens**/
 @media only screen and (min-width: 1500px) {
+  .imgdesign-home {
+    max-width: 500px;
+  }
+
+  .homecta {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding: 70px;
+  }
+
+  .newad-main {
+    max-width: 1200px;
+  }
+
+  .form-wrapper {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .shop-main {
+    max-width: 1350px;
+  }
+
+  .products-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+  }
+
+  .suksess-main {
+    margin-bottom: 150px;
+  }
+
+  .success-contact {
+    margin-bottom: 100px;
+  }
 }
