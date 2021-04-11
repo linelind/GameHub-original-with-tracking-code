@@ -84,6 +84,13 @@ h2 {
   font-size: 0.75rem;
 }
 
+.heading-specs {
+  font-family: 'Montserrat SemiBold';
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
 .cart-total {
   font-size: 1.3rem;
   font-weight: bold;
