@@ -11,7 +11,7 @@ nav a {
 }
 
 .current {
-  text-decoration: underline 0.2rem;
+  text-decoration: underline 0.2rem var(--darkblue-colour);
 }
 
 input {
