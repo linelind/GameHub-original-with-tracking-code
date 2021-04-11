@@ -46,69 +46,164 @@
       </header>
       <main class="main-checkout">
         <h1>Checkout</h1>
-        <section class="account-container_2">
-          <h2 class="account-heading">Order history</h2>
-          <div class="orderhistory-frame">
-            <div class="orderhistory-container orderhistory_background">
-              <div class="orderhistory_1">
-                <p>Purchased: 02-12-20</p>
-                <p>BOXER (2020)</p>
+        <section>
+          <h2>Cart</h2>
+          <section class="cart-section">
+            <div>
+              <div>
+                <h3>Product</h3>
               </div>
-              <div class="orderhistory_2">
-                <p class="used-label">used</p>
-                <p>NOK 429,00</p>
-              </div>
-              <div class="orderhistory_3">
-                <img src="images/products/GameHub_covers8.jpg" alt="Game cover BOXER" class="productimage" />
-              </div>
-            </div>
-            <div class="orderhistory-container">
-              <div class="orderhistory_1">
-                <p>Purchased: 02-12-20</p>
-                <p>Racing (2018)</p>
-              </div>
-              <div class="orderhistory_2">
-                <p class="used-label">used</p>
-                <p>NOK 350,00</p>
-              </div>
-              <div class="orderhistory_3">
-                <img src="images/products/GameHub_covers7.jpg" alt="Game cover Racing" class="productimage" />
+              <div class="cart-productinfo">
+                <div>
+                  <img src="images/products/GameHub_covers8.jpg" alt="Game cover BOXER" class="productimage" />
+                </div>
+                <div>
+                  <p>Boxer</p>
+                  <p>2018</p>
+                  <p>CD-ROM</p>
+                  <p class="used-label">used</p>
+                </div>
               </div>
             </div>
-            <div class="orderhistory-container orderhistory_background">
-              <div class="orderhistory_1">
-                <p>Purchased: 02-12-20</p>
-                <p>Space War (2018)</p>
-              </div>
-              <div class="orderhistory_2">
-                <p class="used-label">used</p>
-                <p>NOK 410,00</p>
-              </div>
-              <div class="orderhistory_3">
-                <img src="images/products/GameHub_covers6.jpg" alt="Game cover Space War" class="productimage" />
+            <div>
+              <h3>Quantity</h3>
+              <div class="cart-quantityselect">
+                <label for="quantity"></label>
+                <select id="quantity" name="quantity" class="select-quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
               </div>
             </div>
-          </div>
+            <div>
+              <h3>Price per item</h3>
+              <div class="cart-productprice">
+                <p>Nok 429,00</p>
+              </div>
+            </div>
+            <div>
+              <h3>Total price</h3>
+              <div class="cart-producttotal">
+                <p>Nok 429,00</p>
+                <div class="cart-trash">
+                  <p>
+                    remove item
+                    <i class="fas fa-trash-alt" alt="trash icon"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="cart-section cart-section_seconditem">
+            <div>
+              <div>
+                <h3 class="cart-hide">Product</h3>
+              </div>
+              <div class="cart-productinfo">
+                <div>
+                  <img src="images/products/GameHub_covers8.jpg" alt="Game cover BOXER" class="productimage" />
+                </div>
+                <div>
+                  <p>Boxer</p>
+                  <p>2018</p>
+                  <p>CD-ROM</p>
+                  <p class="used-label">used</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 class="cart-hide">Quantity</h3>
+              <div class="cart-quantityselect">
+                <label for="quantity"></label>
+                <select id="quantity" name="quantity" class="select-quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <h3 class="cart-hide">Price per item</h3>
+              <div class="cart-productprice">
+                <p>Nok 429,00</p>
+              </div>
+            </div>
+            <div>
+              <h3 class="cart-hide">Total price</h3>
+              <div class="cart-producttotal">
+                <p>Nok 429,00</p>
+                <div class="cart-trash">
+                  <p>
+                    remove item
+                    <i class="fas fa-trash-alt" alt="trash icon"></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="cart-total">
+            <p>Total</p>
+            <p>Nok 678,00</p>
+          </section>
         </section>
-
         <section>
           <h2>Shipping</h2>
+          <form action="form-success.php" method="POST">
+            <div class="checkout-form">
+              <label for="fullname">Full name</label>
+              <input type="text" id="fullname" name="Full name" required />
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" required />
+              <div class="checkout-form_small">
+                <div>
+                  <label for="zipcode">Zip code</label>
+                  <input type="text" id="zipcode" name="zipcode" required />
+                </div>
+                <div>
+                  <label for="city">City</label>
+                  <input type="text" id="city" name="city" required />
+                </div>
+              </div>
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" required />
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+          </form>
         </section>
-
         <section>
           <h2>Payment</h2>
-          <div>
-            <i alt="Visa" class="fab fa-cc-visa"></i>
+          <div class="payment-methods">
+            <div class="payment-alternative">
+              <i class="fab fa-cc-visa" alt="Visa"></i>
+            </div>
+            <div class="payment-alternative">
+              <i class="fab fa-cc-mastercard" alt="Mastercard"></i>
+            </div>
+            <div class="payment-alternative">
+              <i class="fab fa-cc-amex" alt="American Express"></i>
+            </div>
           </div>
-          <div>
-            <i alt="Mastercard" class="fab fa-cc-mastercard"></i>
-          </div>
-          <div>
-            <i alt="American Express" class="fab fa-cc-amex"></i>
-          </div>
-          <div>
-            <i alt="Paypal" class="fab fa-cc-paypal"></i>
-          </div>
+          <form action="form-success.php" method="POST">
+            <section class="checkout-form">
+              <label for="cardnumber">Card number</label>
+              <input type="text" id="cardnumber" name="card number" required />
+              <label for="cardholder">Cardholder name</label>
+              <input type="text" id="cardholder" name="cardholder" required />
+              <label for="expiredate">Expire date</label>
+              <input type="text" id="expiredate" name="expiredate" required />
+              <label for="cvv" class="checkout-form_cvv">CVV</label>
+              <input type="tel" name="cvv" id="cvv" />
+              <a href="success.html" class="cta placeorder-cta">Place order</a>
+            </section>
+          </form>
         </section>
       </main>
       <footer>

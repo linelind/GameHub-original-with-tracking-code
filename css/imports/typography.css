@@ -84,6 +84,11 @@ h2 {
   font-size: 0.75rem;
 }
 
+.cart-total {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .success-info {
   font-size: 0.75rem;
   line-height: 1rem;

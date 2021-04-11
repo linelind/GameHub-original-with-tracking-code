@@ -320,7 +320,7 @@ textarea {
 
 .product-title {
   text-align: left;
-  margin: 0 0 5px 0;
+  margin: 0 0 0 -10px;
 }
 
 .productspecific-container {
@@ -387,11 +387,6 @@ textarea {
   max-width: 50px;
 }
 
-.productspecific-container_text .new-label {
-  margin-top: -50px;
-  position: absolute;
-}
-
 .productpage-year {
   margin-top: 0;
 }
@@ -407,23 +402,6 @@ textarea {
   gap: 10px;
 }
 
-.specs::before {
-  content: '';
-  padding: 100px 1px;
-  position: relative;
-  background: #d6b23a;
-  right: 70px;
-  top: 80px;
-}
-
-.productspecific-container_text::after {
-  content: '';
-  padding: 1px;
-  background: #848f9a56;
-  position: relative;
-  top: 380px;
-}
-
 /*Checkout*/
 .main-checkout {
   max-width: 1000px;
@@ -432,6 +410,103 @@ textarea {
 
 .main-checkout h2 {
   text-align: center;
+  margin-top: 100px;
+}
+
+.main-checkout h3 {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.cart-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px 10px 20px;
+}
+
+.cart-productinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cart-section_seconditem {
+  background-color: var(--lightyellow-colour);
+}
+
+.cart-productinfo p {
+  line-height: 10px;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.select-quantity {
+  min-width: 80px;
+}
+
+.cart-trash {
+  font-size: 0.8rem;
+  margin-top: 50px;
+}
+
+.cart-hide {
+  display: none;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: var(--darkblue-colour);
+  color: #fff;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: auto;
+}
+
+.checkout-form label,
+.checkout-form_small {
+  margin-top: 10px;
+}
+
+.checkout-form_small {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.payment-alternative {
+  padding: 20px 50px;
+  border: 2px solid var(--orange-colour);
+  border-radius: 5px;
+  color: var(--darkblue-colour);
+  margin-bottom: 50px;
+}
+
+#cvv {
+  max-width: 50%;
+}
+
+.placeorder-cta {
+  margin: 50px 0 30px 0;
+  align-self: center;
+  padding: 15px 40px;
+}
+
+.checkoutform_smallerscreens {
+  display: none;
 }
 
 /*Success page*/
